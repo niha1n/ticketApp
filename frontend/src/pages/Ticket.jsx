@@ -59,7 +59,7 @@ export default function Ticket() {
         </div>
       </header>
       {ticket.status !== 'closed' && (
-        <button className="btn btn-block btn-danger">Close Ticket</button>
+        <button onClick={onTicketClose} className="btn btn-block btn-danger">Close Ticket</button>
       )}
     </div>
   );
