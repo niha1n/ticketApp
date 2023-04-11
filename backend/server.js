@@ -16,6 +16,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
+app.use(cors({
+  origin: 'https://peppy-marigold-86aa2f.netlify.app'
+}));
 
 //Routes
 app.use("/api/users", require("./routes/userRoutes"));
@@ -26,9 +29,6 @@ app.use("/api/tickets", require("./routes/ticketRoutes"));
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Welcome to the Support Desk API" });
 });
-app.use(cors({
-  origin: 'https://peppy-marigold-86aa2f.netlify.app'
-}));
 
 // if(process.env.NODE_ENV === 'production'){
 
