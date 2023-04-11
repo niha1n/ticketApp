@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/users/'
+const API_URL = 'https://supportdesk-vzpg.onrender.com/api/users/'
 
 //register user
 const register = async (userData) => {
