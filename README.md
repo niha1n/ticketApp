@@ -15,7 +15,6 @@ This is a web application for managing support tickets built with the MERN (Mong
 - Frontend: React, Redux, Axios, Bootstrap
 - Backend: Node.js, Express, MongoDB (Mongoose)
 - Authentication: JWT (JSON Web Tokens)
-- Real-time notifications: Socket.IO
 
 ## Usage
 
